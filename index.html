@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>BIIB Sites</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image" href="BIIBimg/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="csss/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body onload="loa()">
+    <header>
+        <div>
+            <button class="Hbut navB" type="button">MENU</button>
+            <nav class="Hnav nav-js" data-active="false">
+                <ul class="menu">
+                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="#servi">Serviços</a></li>
+                    <li class="item"><a href="#cria">Criação</a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="https://www.instagram.com/biib_sites/"><i class="fab fa-instagram icon"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=5511944666317&text&app_absent=0"><i
+                                class="fab fa-whatsapp icon"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/thales-3650b41b6/"><i
+                                class="fab fa-linkedin-in icon"></i></a></li>
+                    <li><a href="mailto:biibdesenvolvimentos@gmail.com"><i class="far fa-envelope icon"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class='fundoI' id="opa">
+        <div class="mySlides fade">
+            <div class="pageS">
+                <div class="LC t1">
+                    <h1>0</h1>
+                </div>
+                <div class="LC t2">
+                    <h1>1</h1>
+                </div>
+                <div class="LC t3">
+                    <h1>1</h1>
+                </div>
+                <div class="logoS" onclick="currentSlide(2)">Voltar</div>
+                <div class="conteudoS">
+                    <h2>Veja seu trabalho na integra</h2>
+                    <p>Todas as nossas aplicações são realizadas a partir da escolha do cliente.
+                        Como assim? Então, todos os sites feitos pela BIIB são programados e custumizados a mão,
+                        o que possibilita a uma maior gama de escolhas, com conteúdo autêntico!
+                    </p>
+                    <a href="#info">mais informações</a>
+                </div>
+            </div>
+            <div class="paper">
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="LC mnm"><img src="BIIBimg/BIIBlogo.png"></div>
+            <div class="loader">
+                <div class="prog">
+                    <div id="por">1%</div>
+                    <div id="bar">
+                        <div id="barc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <div class="hea">
+                    <ul>
+                        <li class="botao uno" onclick="currentSlide(1)">promoções de site</li>
+                        <li class="log"><img src="BIIBimg/logo.png"></li>
+                        <li class="botao dwo" onclick="currentSlide(3)">promoções de pagina</li>
+                    </ul>
+                </div>
+                <div class="Scont">
+                    <h1>Crie seu portifolio.</h1>
+                    <h1>Automatize redes.</h1>
+                    <h1>Construa seu estilo.</h1>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="cardT">
+                    <h2>sobre</h2>
+                    <p>A <strong style="color: cadetblue;">BIIB</strong> inclui
+                        sistemas de gerenciamento de contas em redes sociais, aplicando
+                        o profissionalismo e estilo das postagens de acordo com sua necessidade</p>
+                    <h2>Ajuda</h2>
+                    <p>Caso aja duvidas relacionadas aos nossos serviços, todas elas podem se
+                        retiradas diretamente conosco, em nosso contatos no <strong style="color: #333;">MENU</strong>
+                        pelas nossas principais redes sociais
+                        <strong style="color:green;">whatsapp</strong> e <strong
+                            style="color:darkviolet;">instagram</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="LC t1"><img src="BIIBimg/whatsapp3d.png"></div>
+            <div class="LC t2"><img src="BIIBimg/tik-tok3d.png"></div>
+            <div class="LC t3"><img src="BIIBimg/youtube3d.png"></div>
+            <div class="pageP">
+                <div class="logoP" onclick="currentSlide(2)">Voltar</div>
+                <img src="BIIBimg/social.jpg" class="Pbg">
+                <div class="conteudoP">
+                    <h2>Gerencie a pagina da sua empresa!</h2>
+                    <p>Nós fornecemos serviços de gestão de páginas em redes sociais
+                        de acordo com a preferência do cliente. Com direito a:
+                        edição de imagem e vídeo, stories e postagens
+                        semanalmente além da divulgação em nossa pagina!.
+                    </p>
+                    <a href="#info">mais informações</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="setup">
+            <dfn data-info="Participe do nosso programa de recomendações e ganhe mais de R$100 por contrato!!"><a
+                    href="https://www.instagram.com/biib_sites/">indicar</a><img src="BIIBimg/media.png"></dfn>
+        </div>
+        <div class="contP" id="info">
+            <div class="cardP">
+                <div class="imgbxP">
+                    <img src="BIIBimg/coding.png">
+                    <h3>Sites</h3>
+                </div>
+                <div class="conteudoP">
+                    <p>
+                        <strong style="color: rgb(0, 0, 117);">empresarial/portfólio</strong> = A partir de
+                        <strong>R$699,90</strong>
+                        Ex: <a style="color: rgb(140, 0, 255);"
+                            href="https://catripilar.github.io/LabirInto/">LabirInto</a>
+                        <strong>comercial/estilizado</strong> = A partir de <strong>R$999,90</strong>
+                        Ex: <a style="color: darkorchid;" href="https://catripilar.github.io/FruitShake/">FruitShake</a>
+                        <strong style="color: rgb(0, 255, 34);">Pacote:</strong>
+                        Site a sua escolha com 10% de desconto + Gerenciamento de página +
+                        Manutenção do site gratuita.
+                        (<strong>Hospedagem e Domínio a combinar conosco</strong>)
+                    </p>
+                </div>
+            </div>
+            <div class="cardP">
+                <div class="imgbxP">
+                    <img src="BIIBimg/smartphone.png">
+                    <h3>Paginas</h3>
+                </div>
+                <div class="conteudoP">
+                    <p><strong>Gerenciamento de página:</strong>
+                        min: R$300/mensal (relativo ao tamanho da página e taxa de engajamento).
+
+                        <strong>Atualizações:</strong>
+                        A realização de atualizações na página giram em torno da
+                        complexidade de sua adição ou requisito de adaptação, que é pago
+                        pelo custo do trabalho.
+                    </p>
+                </div>
+            </div>
+            <div class="cardP">
+                <div class="imgbxP">
+                    <img src="BIIBimg/measuring.png">
+                    <h3>Outros</h3>
+                </div>
+                <div class="conteudoP">
+                    <p><strong>Site franqueado ou +:</strong>
+                        Valores de projetos mais complexos e estilização
+                        autêntica a cima dos exemplos propostos podem ser negociado
+                        diretamente conosco via web(meet por exemplo) ou presencial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='fundoS'>
+        <div class="Hconteudo" id="servi">
+            <div class="in right">
+                <div class="text1H">
+                    <p class="subT">BIIB criação</p>
+                    <h1 class="titulo">Sites!</h1>
+                    <p class="desc">Esses são exemplos de sites construídos para
+                        Clientes da BIIB sites. Todos os nossos clientes por cortesia são divulgados
+                        Na página principal da BIIB Sites. Essa divulgação é feita por tempo indeterminado.
+                        (Que pelo seu alto investimento irá persistir na página mesmo após o fim do contrato mantendo o engajamento extra do seu site conosco).</p>
+                    <div class="smart L">
+                        <div class="content">
+                            <a class="button but2"><span>Sites dos Clientes</span></a>
+                            <a class="FruitShake" href="https://catripilar.github.io/FruitShake/"><h1><img src="https://raw.githubusercontent.com/catripilar/FruitShake/main/fruimg/Flogo.png">FruitShake(Exemplo)</h1></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="in left">
+                <div class="text1H">
+                    <p class="subT">BIIB Gestão</p>
+                    <h1 class="titulo">Paginas!</h1>
+                    <p class="desc">Já esses são exemplos de paginas gerenciadas pela
+                        BIIB sites. As páginas, assim como os sites, também recebem uma divulgação
+                        Gratuita como cortesia em nossa página, redirecionando possíveis clientes as páginas
+                        Representadas ajudando até mesmo a aumentar o fluxo!(A divulgação persiste pelo tempo de contrato com a pagina).</p>
+                    <div class="smart R">
+                        <div class="content">
+                            <a class="button but2"><span>Paginas dos Clientes</span></a>
+                            <a class="take" href="https://www.instagram.com/take_barbecue/"><h1><img src="BIIBimg/take.jpg">take barbecue</h1></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="preexbg">
+            <h2>Construa sua pagina</h2>
+        </div>
+    </section>
+    <section>
+        <div class="expage" id="ex">
+            <div class="exmenu" onclick="exM()"></div>
+            <div class="exnav">
+                <ul>
+                    <li>
+                        <input type="range" id="ranR" value="1" min="0" max="255" class="slider">
+                        <input type="range" id="ranG" value="10" min="0" max="255" class="slider">
+                        <input type="range" id="ranB" value="67" min="0" max="255" class="slider">
+                    </li>
+                    <li>
+                        <input type="text" class="extext" id="log" placeholder="LOGO" onchange="exL()">
+                        <input type="text" class="extext" id="tilt" placeholder="TÍTULO DO TEXTO" onchange="exT()">
+                        <input type="text" class="extext" id="tex" placeholder="TEXTO" onchange="exB()">
+                    </li>
+                    <li><label for='arquivo' class="exarc">Enviar Imagem</label>
+                        <input type="file" id="arquivo" onchange="exA(event)">
+                    </li>
+                </ul>
+            </div>
+            <div class="exlogo">LOGO</div>
+            <img src="BIIBimg/sty.jpg" class="exbg">
+            <div class="exconteudo" id="cria">
+                <h2>Construa sua <br>própria pagina.</br></h2>
+                <p>Aqui é onde ficaria a descrição da sua página inicial
+                    e as informações dos seus serviços. Fique à vontade
+                    para customizar!</p>
+                <a onclick="exO()">Original</a>
+            </div>
+            <p class="excop">@2021. BIIB sites</p>
+        </div>
+    </section>
+    <script>function exL() { let log = document.getElementById('log').value; document.querySelector('.exlogo').innerHTML = log; }</script>
+    <script>function exT() { let log = document.getElementById('tilt').value; document.querySelector('.exconteudo h2').innerHTML = log; }</script>
+    <script>function exB() { let log = document.getElementById('tex').value; document.querySelector('.exconteudo p').innerHTML = log; }</script>
+    <script>
+        function exA(event) {
+            var selectedFile = event.target.files[0];
+            var reader = new FileReader();
+            var imgtag = document.querySelector('.exbg');
+            reader.onload = function (event) { imgtag.src = event.target.result; };
+            reader.readAsDataURL(selectedFile);
+        }
+    </script>
+    <script>function exM() {
+            var exm = document.querySelector('.exmenu'); exm.classList.toggle('active');
+            var nav = document.querySelector('.exnav'); nav.classList.toggle('active');
+        }
+    </script>
+    <script>
+        function exC() {
+            const expage = document.querySelector('.expage');
+            let R = document.getElementById('ranR').value;
+            let G = document.getElementById('ranG').value;
+            let B = document.getElementById('ranB').value;
+            let color = 'rgb(' + R + ',' + G + ',' + B + ')';
+            expage.style.background = color;
+        }
+        document.getElementById('ranR').addEventListener('input', exC);
+        document.getElementById('ranG').addEventListener('input', exC);
+        document.getElementById('ranB').addEventListener('input', exC);
+    </script>
+    <script>
+        function exO() {
+            const expage = document.querySelector('.expage'); expage.style.background = '#010a43';
+            document.querySelector('.exlogo').innerHTML = 'LOGO';
+            document.querySelector('.exbg').src = "BIIBimg/sty.jpg"
+            document.querySelector('.exconteudo h2').innerHTML = 'Construa sua <br>própria pagina.</br>';
+            document.querySelector('.exconteudo p').innerHTML =
+                'Aqui é onde ficaria a descrição da sua página inicial e as informações dos seus serviços. Fique à vontade para customizar!'
+        }
+    </script>
+    <script>$('.preexbg').mousemove(function (e) { var x = (e.pageX * -1 / 500); var y = (e.pageY * -1 / 50); $(this).css('background-position', x + 'px ' + y + 'px') });</script>
+    <script>
+        const load = gsap.timeline({ paused: "true" });
+        load.to('#por, #bar', { duration: .2, opacity: 0, zIndex: -1 });
+        load.to('.prog', { duration: .8, width: '0%' });
+        load.to('.LC', { duration: 1.5, top: '50%', left: '80%' });
+        load.to('.LC.mnm img', { duration: .5, width: '115%', height: '115%' });
+        load.to('.loader', { zIndex: 0 });
+        load.from('.hea, .footer', { duration: 1.5, y: '150%', x: '-50%', opacity: 0, stagger: { amount: .4 } }, '-=.5');
+        load.from('h1,p', { duration: 1.8, delay: 1, y: 200, skewY: 10, stagger: { amount: .4 }, opacity: 0, ease: 'power4.out' }, '-=.5');
+        load.from('.Hbut', 2, { opacity: 0, x: -200 });
+        gsap.from('.left', 3, { scrollTrigger: '.left', opacity: 0, width: '0', x: 700, background: '#333' });
+        gsap.from('.right', 3, { scrollTrigger: '.right', opacity: 0, width: '0', x: -700, background: '#333' });
+        gsap.from('.setup img', { scrollTrigger: '.setup img', duration: 1.8, delay: 1, x: 50, skewY: 10, stagger: { amount: .4 }, opacity: 0, ease: 'power4.out' }, '-=.5');
+        gsap.from('.cardP', { scrollTrigger: '.cardP', duration: 1.8, delay: 1, y: 50, skewY: 10, stagger: { amount: .4 }, opacity: 0, ease: 'power4.out' }, '-=.5');
+        var id; var width = 1;
+        function loa() { id = setInterval(frame, 20); }
+        function frame() {
+            if (width >= 100) { clearInterval(id); load.play(); }
+            else {
+                width++;
+                document.getElementById('barc').style.width = width + '%';
+                document.getElementById('por').innerHTML = width + '%';
+            }
+        }
+        document.addEventListener("mousemove", e => { gsap.to('.mnm', 1, { x: e.clientX - 800, y: e.clientY - 200 }); });
+        document.addEventListener("mousemove", e => { gsap.to('.t1', 1, { x: e.clientX - 500, y: e.clientY - 400 }); });
+        document.addEventListener("mousemove", e => { gsap.to('.t2', 3, { x: e.clientX - 1200, y: e.clientY - 600 }); });
+        document.addEventListener("mousemove", e => { gsap.to('.t3', 2, { x: e.clientX - 800, y: e.clientY - 200 }); });
+        document.addEventListener("mousemove", e => { gsap.to('.cell', { x: e.clientX - 200 }); });
+        let cell = document.querySelector('.cell');
+        cell.onclick = function () { cell.classList.toggle('active'); }
+    </script>
+    <script>
+        var slideIndex = 2;
+        showSlides(slideIndex);
+        function currentSlide(n) { showSlides(slideIndex = n); }
+        function showSlides(n) {
+            var i; var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <script>$(window).scroll(function () { var sp = $(this).scrollTop(); $('.setup').css({ 'background-size': +1300 + sp + 'px' }); });</script>
+    <script>
+        let AS = false; let paraT = document.querySelectorAll('.paral'); const SCP = () => { AS = true };
+        const raf = () => { if (AS) { paraT.forEach((element, index) => { element.style.transform = "translateX(" + (window.scrollY / 5 - 800) + "px)"; }); AS = false; }; requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+        window.addEventListener("scroll", SCP);
+    </script>
+    <script>
+        let carta = document.querySelector('.smart.L');
+        carta.onclick = function () { carta.classList.toggle('active'); }
+        document.addEventListener("DOMContentLoaded", () => {
+            const reV = window.revealer({
+                revealElementSelector: ".nav-js",
+                options: {anchorSelector: ".navB",},
+            });
+            const actB = document.querySelector(".navB");
+            actB.addEventListener("click", () => {
+                if (!reV.isRevealed()) { reV.reveal(); actB.setAttribute("data-open", true); }
+                else { reV.hide(); actB.setAttribute("data-open", false); }
+            });
+        });
+    </script>
+    <script>
+        var t1 = new TimelineMax({ paused: true });
+        t1.staggerFrom('.item ', 2, { x: -500 });t1.staggerFrom('.social ', 2, { x: 1000 });
+        $('.Hbut').on('click', function () {t1.reversed(false).restart();});
+    </script>
+</body>
+
+</html>
