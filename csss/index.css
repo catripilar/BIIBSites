@@ -535,7 +535,7 @@ dfn a{
 .take img{animation: flu 15s infinite;}
 .take img:hover{box-shadow: 0 0 10px crimson;border: firebrick 5px outset;}
 .take h1:hover{color:crimson;}
-.FruitShake img{border: cyan 5px outset;animation: flu 15s infinite;}
+.FruitShake img{border: cyan 5px outset;animation: flu 25s infinite;}
 .FruitShake img:hover{box-shadow: 0 0 10px cyan;border: cyan 5px outset;}
 .FruitShake h1:hover{color:cyan;}
 .contP{
