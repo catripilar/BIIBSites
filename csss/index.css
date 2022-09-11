@@ -239,9 +239,9 @@ dfn a{
 .LC{position: absolute;top: 50%;left: 50%;z-index: 70;opacity: .4;transform: translate(-50%,-50%);filter: invert(1);}
 .LC.t1 img,.LC.t2 img,.LC.t3 img{filter: invert(1);animation: roda 20s linear infinite;width: 100px;transition: .6s;}
 .LC.t1:hover img,.LC.t2:hover img,.LC.t3:hover img{animation: spin .6s;opacity: 0;}
-.LC.t1 img{width: 120px;}
-.LC.t3 img{width: 170px;}
-.LC.mnm img{animation: roda 20s linear infinite;width: 200px;height: 200px;transition: .6s;}
+.LC.t1 img{width: 70px;}
+.LC.t3 img{width: 120px;}
+.LC.mnm img{animation: roda 20s linear infinite;width: 100px;height: 100px;transition: .6s;}
 .LC:hover img{animation: spin .6s;opacity: 0;}
 @keyframes roda{
     from{transform: rotate(0deg);}
